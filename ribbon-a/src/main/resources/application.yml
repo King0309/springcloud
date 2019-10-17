@@ -1,0 +1,15 @@
+server:
+  port: 9990
+
+spring:
+  application:
+    name: ribbon-a
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8990/eureka
+    healthcheck:
+      enabled: true
+    instance:
+      prefer-ip-address: true

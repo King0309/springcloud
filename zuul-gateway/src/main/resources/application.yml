@@ -1,0 +1,15 @@
+server:
+  port: 9992
+
+spring:
+  application:
+    name: zuul-gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8990/eureka
+    healthcheck:
+      enabled: true
+    instance:
+      prefer-ip-address: true
