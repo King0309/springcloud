@@ -13,3 +13,11 @@ eureka:
       enabled: true
     instance:
       prefer-ip-address: true
+
+zuul:
+  routes:
+    user-service:
+      path: /do/**
+      serviceId: eureka-client-a
+      stripPrefix: true
+

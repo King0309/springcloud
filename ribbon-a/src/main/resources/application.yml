@@ -13,3 +13,13 @@ eureka:
       enabled: true
     instance:
       prefer-ip-address: true
+
+
+eureka-client-a:
+  ribbon:
+    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    listOfServers: localhost:11100,localhost:11101
+ribbon:
+  eureka:
+    enabled: false
