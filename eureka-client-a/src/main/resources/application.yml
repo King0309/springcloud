@@ -1,12 +1,14 @@
 spring:
+  profiles:
+    active: dev
   application:
     name: eureka-client-a
 server:
-  port: 9991
+  port: 9091
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8990/eureka
-  instance:
-    prefer-ip-address: true
+    instance:
+      prefer-ip-address: true
