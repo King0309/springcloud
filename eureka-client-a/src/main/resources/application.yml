@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dev
+    active: dev, updlo
   application:
     name: eureka-client-a
 server:
@@ -12,3 +12,6 @@ eureka:
       defaultZone: http://localhost:8990/eureka
     instance:
       prefer-ip-address: true
+
+pays:
+  zf: jksdfs.dfe
